@@ -1,308 +1,317 @@
 {
-  "sprintbacklog": [
+  "userProfile": {
+    "id": 1,
+    "photo": "/src/assets/me.jpg",
+    "name": "Diego Rosado",
+    "email": "rosadoiporre@gmail.com",
+    "birthDate": "01/01/1990",
+    "address": "Calle 1 Urb. San Felipe 257",
+    "paymentMethod": "Tarjeta de Credito",
+    "cardNumber": "4772 **** **** 8898",
+    "yapeNumber": "",
+    "cashPayment": false,
+    "preferences": [
+      "Pescados y Mariscos",
+      "Comida China",
+      "Comida Internacional",
+      "Comida Saludable",
+      "Hamburguesas y Sandwiches"
+    ]
+  },
+  "chefs": [
     {
       "id": 1,
-      "title": "Sprint 1",
-      "goal": "Implementación de la funcionalidad básica",
-      "startDate": "2024-10-01",
-      "endDate": "2024-10-15",
-      "status": "started"
+      "name": "Juan Perez",
+      "rating": 3.3,
+      "favorite": true,
+      "imageUrl": "/src/assets/chef1.png"
     },
     {
       "id": 2,
-      "title": "Sprint 2",
-      "goal": "Integración con APIs externas",
-      "startDate": "2024-10-16",
-      "endDate": "2024-10-30",
-      "status": "ended"
-    }
-  ],
-  "userStories": [
-    {
-      "id": 1,
-      "title": "Como usuario, quiero registrarme en la aplicación",
-      "description": "Necesito un formulario de registro para crear una cuenta en la aplicación.",
-      "status": "to_do",
-      "epicId": 1,
-      "sprintBacklogId": 1,
-      "effort": 5,
-      "tasks": [
-        {
-          "id": 1,
-          "title": "Diseñar formulario de registro",
-          "description": "Crear el diseño del formulario de registro.",
-          "status": "to_do",
-          "estimation": 4,
-          "userStoryId": 1
-        },
-        {
-          "id": 2,
-          "title": "Implementar lógica de registro",
-          "description": "Desarrollar la lógica del backend para el registro de usuarios.",
-          "status": "to_do",
-          "estimation": 6,
-          "userStoryId": 1
-        }
-      ]
-    },
-    {
-      "id": 2,
-      "title": "Como usuario, quiero iniciar sesión en la aplicación",
-      "description": "Necesito un formulario de inicio de sesión para acceder a mi cuenta.",
-      "status": "in_progress",
-      "epicId": 1,
-      "sprintBacklogId": 1,
-      "effort": 3,
-      "tasks": [
-        {
-          "id": 3,
-          "title": "Diseñar formulario de inicio de sesión",
-          "description": "Crear el diseño del formulario de inicio de sesión.",
-          "status": "done",
-          "estimation": 3,
-          "userStoryId": 2
-        },
-        {
-          "id": 4,
-          "title": "Implementar lógica de inicio de sesión",
-          "description": "Desarrollar la lógica del backend para la autenticación de usuarios.",
-          "status": "in_progress",
-          "estimation": 5,
-          "userStoryId": 2
-        }
-      ]
+      "name": "Lala Lopez",
+      "rating": 4.5,
+      "favorite": true,
+      "imageUrl": "/src/assets/chef2.png"
     },
     {
       "id": 3,
-      "title": "Como usuario, quiero recuperar mi contraseña",
-      "description": "Necesito un sistema para poder recuperar mi contraseña en caso de olvidarla.",
-      "status": "to_do",
-      "epicId": 2,
-      "sprintBacklogId": 2,
-      "effort": 4,
-      "tasks": [
-        {
-          "id": 5,
-          "title": "Diseñar el flujo de recuperación de contraseña",
-          "description": "Crear el diseño y flujo de la funcionalidad de recuperación de contraseña.",
-          "status": "to_do",
-          "estimation": 3,
-          "userStoryId": 3
-        },
-        {
-          "id": 6,
-          "title": "Implementar lógica de recuperación de contraseña",
-          "description": "Desarrollar la lógica del backend para la recuperación de contraseña.",
-          "status": "to_do",
-          "estimation": 4,
-          "userStoryId": 3
-        }
-      ]
-    }
-  ],
-  "epics": [
-    {
-      "id": 1,
-      "title": "Registro e inicio de sesión",
-      "description": "Implementar todas las funcionalidades relacionadas con el registro e inicio de sesión de usuarios.",
-      "status": "in_progress"
+      "name": "Estefano Jaque",
+      "rating": 2,
+      "favorite": false,
+      "imageUrl": "/src/assets/chef3.png"
     },
     {
-      "id": 2,
-      "title": "Integración de funcionalidades avanzadas",
-      "description": "Integrar funciones avanzadas como recuperación de contraseña y autenticación de dos factores.",
-      "status": "to_do"
-    }
-  ],
-  "issues": [
-    {
-      "id": 1,
-      "title": "Error en autenticación de usuarios",
-      "SprintAssociate": "1",
-      "description": "Los usuarios no pueden autenticarse. El servidor devuelve un error 500.",
-      "status": "Abierto",
-      "priority": "Alta",
-      "assignedTo": "Juan Pérez",
-      "madeBy": "Estefano Jaque",
-      "createdIn": "2024-10-12",
-      "resolutionDate": null,
-      "history": [
-        {
-          "id": 1,
-          "date": "2024-10-12",
-          "user": "Maria González",
-          "event": "Creación",
-          "description": "El issue fue creado por Maria González."
-        },
-        {
-          "id": 2,
-          "date": "2024-10-13",
-          "user": "Juan Pérez",
-          "event": "Asignación",
-          "description": "El issue fue asignado a Juan Pérez."
-        }
-      ]
+      "id": 4,
+      "name": "Juan Torres",
+      "rating": 5,
+      "favorite": false,
+      "imageUrl": "/src/assets/chef4.png"
     },
     {
-      "id": 2,
-      "title": "Problema con el despliegue en producción",
-      "SprintAssociate": 2,
-      "description": "El despliegue en el ambiente de producción falla al cargar el frontend.",
-      "status": "En Progreso",
-      "priority": "Media",
-      "assignedTo": "Carla Ruiz",
-      "madeBy": "Estefano Jaque ",
-      "createdIn": "2024-10-10",
-      "resolutionDate": null,
-      "history": [
-        {
-          "id": 1,
-          "date": "2024-10-10",
-          "user": "Carlos López",
-          "event": "Creación",
-          "description": "El issue fue creado por Carlos López."
-        },
-        {
-          "id": 2,
-          "date": "2024-10-11",
-          "user": "Carla Ruiz",
-          "event": "Asignación",
-          "description": "El issue fue asignado a Carla Ruiz."
-        },
-        {
-          "id": 3,
-          "date": "2024-10-12",
-          "user": "Carla Ruiz",
-          "event": "Actualización",
-          "description": "Carla comenzó a trabajar en la corrección del despliegue."
-        }
-      ]
+      "id": 5,
+      "name": "Sebastián Real",
+      "rating": "1.5",
+      "favorite": false,
+      "imageUrl": "/src/assets/chef1.png"
     }
   ],
-  "experiences": [
+  "posts": [
     {
       "id": 1,
-      "company": "Company A",
-      "position": "Software Developer",
-      "startDate": "2019-01",
-      "endDate": "2021-06",
-      "responsibilities": [
-        "Web application development",
-        "Collaboration in architecture design",
-        "Participation in code reviews"
+      "chefId": 3,
+      "dishName": "Tallarines Rojos",
+      "image": "/src/assets/dishes/tallarines-rojos.jpg",
+      "stock": 20,
+      "ingredients": [
+        "Tallarines",
+        "Tomate",
+        "Cebolla",
+        "Ajo",
+        "Pimiento",
+        "Carne de res",
+        "Queso parmesano"
       ],
-      "technologies": [
-        "JavaScript",
-        "React",
-        "Node.js"
+      "paymentMethods": [
+        1,
+        3,
+        4
       ],
-      "memberId": "1"
-    }
-  ],
-  "members": [
-    {
-      "id": 1,
-      "profile": {
-        "firstName": "Michael",
-        "lastName": "Smith",
-        "address": "456 Oak St",
-        "number": "2B",
-        "city": "Springfield",
-        "postalCode": "98765",
-        "email": "michael.smith@example.com",
-        "country": "USA",
-        "phone": "987-654-3210",
-        "avatar": "https://b2472105.smushcdn.com/2472105/wp-content/uploads/2022/11/Fotografia-de-Retrato-19-1170x1170.jpg?lossy=1&strip=1&webp=1"
-      },
-      "role": {
-        "name": "Developer Team",
-        "description": "A cross-functional group that collaborates to deliver product increments, self-organizing and responsible for quality and estimates."
-      },
-      "availability": {
-        "startSchedule": "09:00",
-        "finalSchedule": "17:00",
-        "days": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday"
-        ]
-      },
-      "status": "Active"
+      "publishDate": "2024-11-04"
     },
     {
       "id": 2,
-      "profile": {
-        "firstName": "Michael",
-        "lastName": "Smith",
-        "address": "456 Oak St",
-        "number": "2B",
-        "city": "Springfield",
-        "postalCode": "98765",
-        "email": "michael.smith999@example.com",
-        "country": "USA",
-        "phone": "987-654-3210",
-        "avatar": "https://b2472105.smushcdn.com/2472105/wp-content/uploads/2022/11/Fotografia-de-Retrato-19-1170x1170.jpg?lossy=1&strip=1&webp=1"
-      },
-      "role": {
-        "name": "Developer Team",
-        "description": "A cross-functional group that collaborates to deliver product increments, self-organizing and responsible for quality and estimates."
-      },
-      "availability": {
-        "startSchedule": "09:00",
-        "finalSchedule": "17:00",
-        "days": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday"
-        ]
-      },
-      "status": "Active"
-    }
-  ],
-  "meetings": [
-    {
-      "id": 1,
-      "title": "Sprint Planning Meeting",
-      "date": "2008-10-12T05:00:00.000Z",
-      "time": "7:14 AM",
-      "link": "https://meet.google.com/landing",
-      "recording": {
-        "recordingLink": "https://meet.google.com/recordings/sprint-planning",
-        "duration": "1h 30m",
-        "publicAccess": true
-      },
-      "host": 2,
-      "members": [
+      "chefId": 2,
+      "dishName": "Arroz con pollo",
+      "image": "/src/assets/dishes/arroz-con-pollo.jpg",
+      "stock": 16,
+      "ingredients": [
+        "Arroz",
+        "Choclo",
+        "Pollo",
+        "Culantro",
+        "Zanahoria",
+        "Arvejas",
+        "Cebolla",
+        "Ajo",
+        "Pimiento"
+      ],
+      "paymentMethods": [
         1,
         2,
         3,
         4
       ],
-      "access_code": "123456"
+      "publishDate": "2024-11-05"
     },
     {
-      "id": 2,
-      "title": "Retrospective Meeting",
-      "date": "2024-10-15",
-      "time": "2:00 PM",
-      "link": "https://meet.google.com/landing",
-      "recording": {
-        "recordingLink": "https://meet.google.com/recordings/retrospective",
-        "duration": "45m",
-        "publicAccess": true
-      },
-      "host": 1,
-      "members": [
+      "id": 3,
+      "chefId": 2,
+      "dishName": "Papa a la Huancaina",
+      "image": "/src/assets/dishes/papa-a-la-huancaina.jpg",
+      "stock": 28,
+      "ingredients": [
+        "Papa",
+        "Ají amarillo",
+        "Queso fresco",
+        "Leche evaporada",
+        "Galletas saladas",
+        "Aceitunas",
+        "Huevo duro"
+      ],
+      "paymentMethods": [
         1,
         2,
         3,
         4
       ],
-      "access_code": "654321"
+      "publishDate": "2024-11-06"
+    },
+    {
+      "id": 4,
+      "chefId": 1,
+      "dishName": "Ceviche de Pescado",
+      "image": "/src/assets/dishes/ceviche-de-pescado.jpeg",
+      "stock": 16,
+      "ingredients": [
+        "Pescado",
+        "Cebolla",
+        "Limón",
+        "Ají limo",
+        "Culantro",
+        "Sal",
+        "Maíz cancha",
+        "Camote"
+      ],
+      "paymentMethods": [
+        1,
+        3,
+        4
+      ],
+      "publishDate": "2024-11-07"
+    }
+  ],
+  "payment-methods": [
+    {
+      "id": 1,
+      "name": "Efectivo",
+      "logo": "assets/payment-method-logos/efectivo-logo"
+    },
+    {
+      "id": 2,
+      "name": "Tarjeta",
+      "logo": "assets/payment-method-logos/tarjeta-logo"
+    },
+    {
+      "id": 3,
+      "name": "Yape",
+      "logo": "assets/payment-method-logos/yape-logo"
+    },
+    {
+      "id": 4,
+      "name": "Plin",
+      "logo": "assets/payment-method-logos/plin-logo"
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "customerId": "1",
+      "orderDate": "2024-09-23",
+      "deliveryDate": "2024-09-28",
+      "paymentMethod": "Tarjeta de credito",
+      "totalAmount": 45.5,
+      "status": "pendiente"
+    },
+    {
+      "id": 2,
+      "customerId": "2",
+      "orderDate": "2024-09-24",
+      "deliveryDate": "2024-09-27",
+      "paymentMethod": "Efectivo",
+      "totalAmount": 23.75,
+      "status": "completado"
+    },
+    {
+      "id": 3,
+      "customerId": "3",
+      "orderDate": "2024-09-25",
+      "deliveryDate": "2024-09-26",
+      "paymentMethod": "Monedero digital",
+      "totalAmount": 30,
+      "status": "en preparacion"
+    }
+  ],
+  "recipes": [
+    {
+      "id": 2,
+      "name_of_dish": "Puré con milanesa",
+      "posted_by": "Maria Jose Pezo",
+      "ingredients": [
+        "2 papas amarillas",
+        "1 taza de leche evaporada",
+        "50g de mantequilla",
+        "2 filetes de carne",
+        "1 huevo",
+        "Pan rallado",
+        "Aceite para freír",
+        "Sal y pimienta"
+      ],
+      "preparation_steps": [
+        "Hierve las papas en agua con sal hasta que estén blandas, luego haz un puré añadiendo leche y mantequilla.",
+        "Sazona los filetes de carne con sal y pimienta.",
+        "Pasa los filetes por huevo batido y luego por pan rallado.",
+        "Fríe los filetes en abundante aceite caliente hasta que estén dorados y crujientes.",
+        "Sirve la milanesa acompañada del puré de papas."
+      ],
+      "favorite": false
+    },
+    {
+      "id": 4,
+      "name_of_dish": "Tacos al pastor",
+      "posted_by": "Laura Gómez",
+      "ingredients": [
+        "500g de carne de cerdo",
+        "1/2 piña",
+        "1 cebolla",
+        "Cilantro al gusto",
+        "Tortillas de maíz",
+        "Salsa al gusto",
+        "Sal y pimienta"
+      ],
+      "preparation_steps": [
+        "Marina la carne de cerdo con sal, pimienta y especias al gusto.",
+        "Cocina la carne en una parrilla hasta que esté dorada.",
+        "Corta la piña y la cebolla en trozos.",
+        "Arma los tacos con tortillas, carne, piña, cebolla y cilantro.",
+        "Agrega salsa al gusto y sirve."
+      ],
+      "favorite": true
+    },
+    {
+      "id": 5,
+      "name_of_dish": "Spaghetti a la boloñesa",
+      "posted_by": "Carlos Martínez",
+      "ingredients": [
+        "200g de spaghetti",
+        "150g de carne molida",
+        "1 lata de tomate triturado",
+        "1 cebolla",
+        "1 diente de ajo",
+        "Aceite de oliva",
+        "Sal y pimienta",
+        "Queso parmesano al gusto"
+      ],
+      "preparation_steps": [
+        "Cocina los spaghetti según las instrucciones del paquete.",
+        "En una sartén, calienta el aceite y sofríe la cebolla y el ajo picados.",
+        "Agrega la carne molida y cocina hasta que esté dorada.",
+        "Incorpora el tomate triturado, sal y pimienta, y deja cocinar a fuego lento.",
+        "Sirve los spaghetti con la salsa y espolvorea con queso parmesano."
+      ],
+      "favorite": true
+    },
+    {
+      "id": 6,
+      "name_of_dish": "Pancakes de avena",
+      "posted_by": "Ana Torres",
+      "ingredients": [
+        "1 taza de avena",
+        "1 plátano",
+        "1 huevo",
+        "1/2 taza de leche",
+        "1 cucharadita de polvo de hornear",
+        "Miel al gusto"
+      ],
+      "preparation_steps": [
+        "Licúa la avena, plátano, huevo y leche hasta obtener una mezcla homogénea.",
+        "Agrega el polvo de hornear y mezcla bien.",
+        "Calienta una sartén y vierte un poco de la mezcla formando pancakes.",
+        "Cocina por ambos lados hasta dorar.",
+        "Sirve con miel y frutas al gusto."
+      ],
+      "favorite": true
+    },
+    {
+      "id": 7,
+      "name_of_dish": "Sopa de lentejas",
+      "posted_by": "Fernando Ruiz",
+      "ingredients": [
+        "1 taza de lentejas",
+        "1 zanahoria",
+        "1 cebolla",
+        "2 dientes de ajo",
+        "1 hoja de laurel",
+        "Agua o caldo de verduras",
+        "Sal y pimienta"
+      ],
+      "preparation_steps": [
+        "Lava las lentejas y ponlas a hervir en agua con la hoja de laurel.",
+        "En una sartén, sofríe la cebolla, ajo y zanahoria picados.",
+        "Agrega las verduras a las lentejas y cocina hasta que estén tiernas.",
+        "Sazona con sal y pimienta al gusto.",
+        "Sirve caliente."
+      ],
+      "favorite": false
     }
   ]
 }
